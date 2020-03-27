@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR|Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #1e1e1e;
+    --color-light: #cccccc;
+    --color-border: #ffffff34;
+    --font-roboto: 'Roboto Mono', monospace;
+    --font-sans: 'Noto Sans KR', sans-serif;
+    --font-serif: 'Noto Serif KR', serif;
+}
+
+/* GLOBAL */
+.font-title {
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    font-weight: bold;
+}
+.font-title-sub {
+    font-family: var(--font-sans);
+    font-size: 18px;
+    font-weight: bold;
+}
+.font-nav {
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    font-weight: normal;
+}
+.font-sans {
+    font-family: var(--font-sans);
+    font-size: 18px;
+}
+.font-serif {
+    font-family: var(--font-serif);
+    font-size: 18px;
+}
+.font-mono {
+    font-family: var(--font-roboto);
+    font-size: 18px;
+}
+
+.bgcolor-dark {
+    background-color: var(--color-dark);
+}
+
+.font-size-1 {
+    font-size: 1rem;
+}
+.font-size-15 {
+    font-size: 1.5rem;
+}
+.font-size-2 {
+    font-size: 2rem;
+}
+.font-size-3 {
+    font-size: 3rem;
+}
+.font-size-4 {
+    font-size: 4rem;
+}
+.font-size-5 {
+    font-size: 5rem;
+}
+
+/* #GLOBAL */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: left .5s ease;
+}
+
+#header nav {
+    height: 100vh;
+}
+
+#header .site-title .navbar-brand {
+    letter-spacing: 2px;
+    color: var(--color-light);
+}
+
+#header .nav-link {
+    margin: 0.7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#header .nav-link:hover {
+    color: var(--color-light) !important;
+}
+
+#header .toggle-button {
+    background: none;
+    color: var(--color-dark);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 0px solid var(--color-border);
+}
+
+.toggle-left {
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+/* site-main */
+.site-banner .banner-area {
+    background: url('./assets/Intraversato.jpg') center fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.site-banner .banner-area .author {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: url('./assets/heeg-portfolio-profile.jpg') center no-repeat;
+    background-size: cover;
+}
+
+/* #site-main */
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+
+    #header {
+        z-index: 0;
+    }
+}
+
+
+
+.border-upper {
+    border-top: 1px solid var(--color-border);
+}
+
+.social a {
+    color: var(--color-border);
+}
+
+.social a:hover {
+    color: var(--color-light);
+}
+
+.project {
+    border: 2px solid var(--gray);
+    box-sizing: border-box;
+}
