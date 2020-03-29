@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
 :root {
     --color-dark: #1e1e1e;
     --color-light: #cccccc;
@@ -113,7 +123,7 @@
 
 /* site-main */
 .site-banner .banner-area {
-    background: url('./assets/Intraversato.jpg') center fixed no-repeat;
+    background: url('./assets/silhouette_fishing_boat.jpg') center fixed no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
